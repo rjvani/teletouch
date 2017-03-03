@@ -68,9 +68,9 @@ def receive():
 	sock.bind((UDP_IP, UDP_PORT))
 	while (1):
 		data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
-        print "received message:",data
-        dataDict = parse(data)
-        activate(dataDict)
+ 	      	print "received message:",data
+        	dataDict = parse(data)
+        	activate(dataDict)
 
 def demoReceive():
 	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -83,7 +83,7 @@ def demoReceive():
 	p.start(50)
 	while (1):
 		data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
-        print "received message:",data
+	        print "received message:",data
 		if (data == "s"):
 			pin = 18 if (pin==16) else 16
 			p.stop()
