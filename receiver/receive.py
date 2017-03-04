@@ -12,6 +12,7 @@ UDP_PORT = 5005
 MAPPING = { 'A':[12, 16, 18], 'B':[11, 13, 15], 'C':[19, 21, 23]}
 
 def activate(data):
+	GPIO.cleanup()
 	#make map from pin number to intensity,
 	#read from data dictionary and activate actuators with gpios
 	pinToFrequency = {}
@@ -38,7 +39,7 @@ def activate(data):
 	for pin in allPins:
 		pin.start(50)
 
-	input('Press return to stop:')
+	x=raw_input('Press anything and return to stop')
 
 	for stopPins in allPins:
 		stopIns.stop()
