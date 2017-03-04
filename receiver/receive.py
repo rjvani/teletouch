@@ -42,7 +42,7 @@ def activate(data):
 	x=raw_input('Press anything and return to stop')
 
 	for stopPins in allPins:
-		stopIns.stop()
+		stopPins.stop()
 
 	GPIO.cleanup()
 	return
