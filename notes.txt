@@ -1,0 +1,7 @@
+Linear Resonant Actuator Specs
+Range: 50-250Hz
+Best Amplitude: 2-3V
+
+Pulse Width Modulation (PWM) in RPi.GPIO
+https://sourceforge.net/p/raspberry-gpio-python/wiki/PWM/
+Use pin number, not GPIO number. For example, pin 18 instead of GPIO 24.
