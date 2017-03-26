@@ -5,3 +5,11 @@ Best Amplitude: 2-3V
 Pulse Width Modulation (PWM) in RPi.GPIO
 https://sourceforge.net/p/raspberry-gpio-python/wiki/PWM/
 Use pin number, not GPIO number. For example, pin 18 instead of GPIO 24.
+
+Raspberry Pi
+Rohan's (Receiver)
+Chelsea's (Sender)
+
+Raspberry Pi Wifi
+Need to get receiver's IP to update in sender and receiver's python files for socket everytime we connect.
+
