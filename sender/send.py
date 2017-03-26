@@ -1,6 +1,6 @@
 import socket
 
-UDP_IP = "172.20.10.21" #receiver's IP
+UDP_IP = "128.237.130.27" #receiver's IP
 UDP_Port = 5005
 MSG = 'heloo'
 
@@ -29,5 +29,20 @@ def send():
 		dataToSend = str(data)
 		sock.sendto(dataToSend, (UDP_IP, UDP_Port))
 
-send()
+def demoSend():
+	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+	print "Sending..."
+	print "UDP target IP:", UDP_IP
+	print "UDP target port:", UDP_Port
+	print 'message:',MSG
+	data = "b"
+	while (1):
+		x = raw_input('Press s to switch and a to stop:')
+		if (x == "s"):
+			data = "s"
+		elif (x=="a"):
+			data = "a"
+		sock.sendto(data, (UDP_IP, UDP_Port))
+
+demoSend()
 
