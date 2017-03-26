@@ -1,5 +1,6 @@
 import socket
 import ast
+import RPi.GPIO as GPIO
 
 UDP_IP = "172.20.10.21" #receiver's IP
 UDP_PORT = 5005
@@ -7,6 +8,43 @@ UDP_PORT = 5005
 def activate(data):
 	#read from data dictionary and activate actuators with gpios
 	return
+
+def testActivate():
+	#see if gpio pwm works
+	GPIO.setmode(GPIO.BOARD)
+	pin = 18
+	GPIO.setup(pin, GPIO.OUT)
+	p = GPIO.PWM(pin, 0.5)
+	p.ChangeFrequency(200)
+	p.start(50)
+	while (1):
+		x = raw_input('Press a to stop:')   # use raw_input for Python 2
+		#p.stop()
+		if (x == "s"):
+			pin = 16 if (pin==18) else 18
+			p.stop()
+			GPIO.cleanup()
+			GPIO.setmode(GPIO.BOARD)
+			GPIO.setup(pin, GPIO.OUT)
+			p = GPIO.PWM(pin, 0.5)
+			p.ChangeFrequency(200)
+			p.start(50)
+		elif (x=="a"):
+			p.stop()
+			GPIO.cleanup()
+			break
+	GPIO.cleanup()
+
+def test():
+#	GPIO.cleanup()
+	GPIO.setmode(GPIO.BOARD)
+	GPIO.setup(18, GPIO.OUT)
+	p = GPIO.PWM(18, 0.5)
+	p.start(50)
+	p.ChangeFrequency(200)
+	input('Press return to stop:')   # use raw_input for Python 2
+	p.stop()
+	GPIO.cleanup()
 
 def parse(stringData):
 	#parse received string into dictionary form
@@ -24,5 +62,5 @@ def receive():
         dataDict = parse(data)
         activate(dataDict)
 
-receive()
 
+testActivate()
