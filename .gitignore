@@ -1,0 +1,6 @@
+# File: .gitignore
+# Author: Rohan Jadvani
+
+*.b#*
+*.s#*
+
