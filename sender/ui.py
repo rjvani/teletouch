@@ -9,10 +9,6 @@ class App:
     med = 2
     high = 3
 
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    UDP_IP = "128.237.208.146" #receiver's IP
-    UDP_Port = 5005
-    MSG = 'heloo'
 
     ##################################################################
     # MOUSE / BUTTON EVENTS
@@ -31,6 +27,10 @@ class App:
             self.redraw()
 
     def send(self):
+        UDP_IP = "128.237.208.146" #receiver's IP
+        UDP_Port = 5005
+        MSG = 'heloo'
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         newDict = {'A': self.array[0], 'B': self.array[1], 'C': self.array[2]}
         sock.sendto(str(newDict), (UDP_IP, UDP_Port))
 
@@ -42,7 +42,6 @@ class App:
         self.canvas = Canvas(self.root, width=600, height=450, bd=0, highlightthickness=0, relief='ridge')
         self.canvas.pack()
         self.array = [[0,0,0] for i in xrange(3)]
-
         self.redraw()
 
     def redraw(self):
