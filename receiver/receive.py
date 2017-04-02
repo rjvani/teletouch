@@ -20,7 +20,7 @@ def activate(data):
 	for x in range(3):
 		index = dictIndices[x]
 		for y in range(3):
-			value = data[y]
+			value = data[index][y]
 			if ((value != 0) and (value <=3)):
 				freq = 70 * value #70hz, 140hz, 210hz
 				pinNum = MAPPING[index][y]
