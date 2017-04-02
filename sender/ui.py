@@ -1,5 +1,6 @@
+## interact with UI to send signals to actuators
 from Tkinter import *
-
+import socket
 
 class App:
 
@@ -7,6 +8,11 @@ class App:
     low = 1
     med = 2
     high = 3
+
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    UDP_IP = "128.237.208.146" #receiver's IP
+    UDP_Port = 5005
+    MSG = 'heloo'
 
     ##################################################################
     # MOUSE / BUTTON EVENTS
@@ -25,7 +31,8 @@ class App:
             self.redraw()
 
     def send(self):
-        print self.array
+        newDict = {'A': self.array[0], 'B': self.array[1], 'C': self.array[2]}
+        sock.sendto(str(newDict), (UDP_IP, UDP_Port))
 
     ##################################################################
     # MAIN
