@@ -1,6 +1,6 @@
 import socket
 
-UDP_IP = "128.237.130.27" #receiver's IP
+UDP_IP = "128.237.208.146" #receiver's IP
 UDP_Port = 5005
 MSG = 'heloo'
 
