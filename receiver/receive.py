@@ -9,7 +9,7 @@ import RPi.GPIO as GPIO
 UDP_IP = "128.237.208.146" #receiver's IP, change every time connect to wifi
 UDP_PORT = 5005
 # mapping from dictionary to gpio pins
-MAPPING = { 'A':[12, 16, 18], 'B':[11, 13, 15], 'C':[19, 21, 23]]
+MAPPING = { 'A':[12, 16, 18], 'B':[11, 13, 15], 'C':[19, 21, 23]}
 
 def activate(data):
 	#make map from pin number to intensity,
