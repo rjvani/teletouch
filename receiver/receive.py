@@ -39,6 +39,8 @@ def activate(data):
 	for pin in allPins:
 		pin.start(50)
 
+	x = raw_put("type something to stop")
+
 	GPIO.cleanup()
 	return
 
