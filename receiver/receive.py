@@ -33,12 +33,14 @@ def activate(data):
 	for key in pinToFrequency:
 		GPIO.setup(key, GPIO.OUT)
 		p = GPIO.PWM(key, 0.5)
+                # print "Hello", key, pinToFrequency[key]
 		p.ChangeFrequency(pinToFrequency[key])
 		allPins.append(p)
 
 	for pin in allPins:
 		pin.start(50)
 
+        x = raw_input("wat")
 	GPIO.cleanup()
 	return
 
