@@ -1,4 +1,5 @@
 import socket
+import RPi.GPIO as GPIO, time, os
 
 UDP_IP = "128.237.208.146" #receiver's IP
 UDP_Port = 5005
@@ -15,7 +16,15 @@ def sense():
                         ('F', [1,2,3,4,5]),
                         ('G', [1,2,3,4,5]),
                         ('H', [1,2,3,4,5])])
-	return test
+	reading = 0
+	GPIO.setup(18, GPIO.OUT)
+	GPIO.output(18, GPIO.LOW)
+	time.sleep(0.1)
+	GPIO.setup(18, GPIO.IN)
+	while(GPIO.input(18) == GPIO>LOW):
+		reading += 1
+	return reading
+	#return test
 
 def send():
 	#constantly sending to receiver pi
@@ -26,6 +35,7 @@ def send():
 	print 'message:',MSG
 	while (1):
 		data = sense()
+		print data
 		dataToSend = str(data)
 		sock.sendto(dataToSend, (UDP_IP, UDP_Port))
 
