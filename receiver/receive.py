@@ -1,100 +1,73 @@
-#
-# GPIO pin numbers are actual pin numbers, not BCM pins
-#
+# File: receive.py
+# Authors: Rohan Jadvani, Chelsea Kwong, Cristian Vallejo, Lisa Yan
+# Brief: Implementation of glove receiver code.
 
 import socket
 import ast
 import RPi.GPIO as GPIO
 
-UDP_IP = "128.237.208.146" #receiver's IP, change every time connect to wifi
+# Size of buffer in bytes
+BUFFER_SIZE = 1024
+# Receiver's IP
+UDP_IP = "128.237.195.168"
+# Receiver port
 UDP_PORT = 5005
+# Current pins being used
+CURR_PINS = [11, 12, 13, 15, 16, 18, 19, 21, 23]
+# Mapping of pins to frequency
+PIN_DICT = dict()
+# Mapping of pin numbers to pin objects
+PIN_OBJS = dict()
 # mapping from dictionary to gpio pins
 MAPPING = { 'A':[12, 16, 18], 'B':[11, 13, 15], 'C':[19, 21, 23]}
 
 def activate(data):
-	GPIO.cleanup()
-	#make map from pin number to intensity,
-	#read from data dictionary and activate actuators with gpios
-	pinToFrequency = {}
-	dictIndices = ['A','B','C']
-	#get intensity values from dictionary received
-	for x in range(3):
-		index = dictIndices[x]
-		for y in range(3):
-			value = data[index][y]
-			if ((value != 0) and (value <=3)):
-				freq = 70 * value #70hz, 140hz, 210hz
-				pinNum = MAPPING[index][y]
-				pinToFrequency[pinNum] = freq
-	#activate actuators
-	GPIO.setmode(GPIO.BOARD)
-	allPins = []
-	#set up all pins 
-	for key in pinToFrequency:
-		GPIO.setup(key, GPIO.OUT)
-		p = GPIO.PWM(key, 0.5)
-                # print "Hello", key, pinToFrequency[key]
-		p.ChangeFrequency(pinToFrequency[key])
-		allPins.append(p)
+    freq_factor = 70
 
-	for pin in allPins:
-		pin.start(50)
+    for key in data:
+        for index in range(len(data[key])):
+            pin_num = MAPPING[key][index]
+            PIN_DICT[pin_num] = freq_factor * data[key][index]
 
-        x = raw_input("wat")
-	GPIO.cleanup()
-	return
-
-def test():
-	GPIO.setmode(GPIO.BOARD)
-	GPIO.setup(18, GPIO.OUT)
-	p = GPIO.PWM(18, 0.5)
-	p.ChangeFrequency(200)
-	p.start(50)
-	input('Press return to stop:')   # use raw_input for Python 2
-	p.stop()
-	GPIO.cleanup()
+    # Output all the frequency values
+    for pin_num in PIN_OBJS:
+        pin_obj = PIN_OBJS[pin_num]
+        pin_freq = PIN_DICT[pin_num]
+        pin_obj.ChangeFrequency(pin_freq + 1)
+        pin_obj.start(50)
 
 def parse(stringData):
-	#parse received string into dictionary form
-	# testStr = "{'A': [1, 2, 3, 4, 5], 'C': [1, 2, 3, 4, 5], 'B': [1, 2, 3, 4, 5], 'E': [1, 2, 3, 4, 5], 'D': [1, 2, 3, 4, 5], 'G': [1, 2, 3, 4, 5], 'F': [1, 2, 3, 4, 5], 'H': [1, 2, 3, 4, 5]}"
-	data = ast.literal_eval(stringData)
-	return data
+    data = ast.literal_eval(stringData)
+    return data
+
+# Initializes and sets up all the necessary pins on the PI
+# TODO: Add extra pins after PCB arrives
+def gpio_init():
+    # Use pin numbering
+    GPIO.setmode(GPIO.BOARD)
+
+    # Use PI interface to set up each pin
+    for pin_num in CURR_PINS:
+        GPIO.setup(pin_num, GPIO.OUT)
+        # Initialize the frequency to be 0 Hz
+        PIN_DICT[pin_num] = 70
+
+        p = GPIO.PWM(pin_num, 1)
+        PIN_OBJS[pin_num] = p
 
 def receive():
-	#constantly receiving and updating actuators	
-	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-	sock.bind((UDP_IP, UDP_PORT))
-	while (1):
-		data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
- 	      	print "received message:",data
-        	dataDict = parse(data)
-        	activate(dataDict)
-
-def demoReceive():
-	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-	sock.bind((UDP_IP, UDP_PORT))
-	GPIO.setmode(GPIO.BOARD)
-	pin = 16
-	GPIO.setup(pin, GPIO.OUT)
-	p = GPIO.PWM(pin, 0.5)
-	p.ChangeFrequency(200)
-	p.start(50)
-	while (1):
-		data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
-	        print "received message:",data
-		if (data == "s"):
-			pin = 18 if (pin==16) else 16
-			p.stop()
-			GPIO.cleanup()
-			GPIO.setmode(GPIO.BOARD)
-			GPIO.setup(pin, GPIO.OUT)
-			p = GPIO.PWM(pin, 0.5)
-			p.ChangeFrequency(200)
-			p.start(50)
-		elif (data=="a"):
-			p.stop()
-			GPIO.cleanup()
-			break
-	# GPIO.cleanup()
+    PREV_DICT = dict()
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.bind((UDP_IP, UDP_PORT))
+    gpio_init()
+    # Constantly receive input and modify actuators
+    while (1):
+        data, addr = sock.recvfrom(BUFFER_SIZE)
+        dataDict = parse(data)
+        if dataDict != PREV_DICT:
+            print "Received " + str(data)
+            PREV_DICT = dataDict
+            activate(dataDict)
 
 receive()
+
