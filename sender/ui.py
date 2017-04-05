@@ -39,7 +39,7 @@ class App:
         print self.array
 
     def send(self):
-        UDP_IP = "128.237.208.146" #receiver's IP
+        UDP_IP = "128.237.195.168" #receiver's IP
         UDP_Port = 5005
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         newDict = {'A': self.array[0], 'B': self.array[1], 'C': self.array[2]}
@@ -91,6 +91,16 @@ class App:
         self.canvas.pack()
         self.array = [[0,0,0] for i in xrange(3)]
         self.redraw()
+
+	self.timerFiredWrapper()
+
+    def timerFired(self):
+	self.send()
+
+    def timerFiredWrapper(self):
+	self.timerFired()
+	delay = 100 # ms
+	self.canvas.after(delay, self.timerFiredWrapper)
 
     def redraw(self):
         self.canvas.delete(ALL)
