@@ -9,7 +9,7 @@ import RPi.GPIO as GPIO
 # Size of buffer in bytes
 BUFFER_SIZE = 1024
 # Receiver's IP
-UDP_IP = "128.237.195.168"
+UDP_IP = "128.237.173.155"
 # Receiver port
 UDP_PORT = 5005
 # Current pins being used
@@ -20,9 +20,15 @@ PIN_DICT = dict()
 PIN_OBJS = dict()
 # mapping from dictionary to gpio pins
 MAPPING = { 
-            'A':[7, 11], 'B':[12, 13], 'C':[15, 16], 'D':[18, 22, 29],
-            'E':[31, 32], 'F':[33, 35], 'G':[36, 37], 'H':[38, 40] 
-          }
+        'A':[7, 11, 0, 0, 0], 
+        'B':[0, 13, 0, 12, 0], 
+        'C':[15, 16, 0, 18, 0], 
+        'D':[0, 22, 29, 0, 0],
+        'E':[31, 32, 0, 0, 0], 
+        'F':[33, 35, 0, 0, 0], 
+        'G':[36, 37, 0, 0, 0], 
+        'H':[38, 40, 0, 0, 0] 
+    }
 
 # FRONT / BACK
 # A/E: Thumb tip, Index tip
@@ -31,12 +37,16 @@ MAPPING = {
 # D/H: Top right palm, Bottom left palm, Bottom right palm
 
 def activate(data):
-    freq_factor = 70
+    lo = 100
 
     for key in data:
         for index in range(len(data[key])):
             pin_num = MAPPING[key][index]
-            PIN_DICT[pin_num] = freq_factor * data[key][index]
+            factor = data[key][index]
+            if factor == 0:
+                PIN_DICT[pin_num] = 0
+            else:
+                PIN_DICT[pin_num] = lo + 40 * factor
 
     # Output all the frequency values
     for pin_num in PIN_OBJS:
