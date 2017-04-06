@@ -13,13 +13,22 @@ UDP_IP = "128.237.195.168"
 # Receiver port
 UDP_PORT = 5005
 # Current pins being used
-CURR_PINS = [11, 12, 13, 15, 16, 18, 19, 21, 23]
+CURR_PINS = [7, 11, 12, 13, 15, 16, 18, 22, 29, 31, 32, 33, 35, 36, 37, 38, 40]
 # Mapping of pins to frequency
 PIN_DICT = dict()
 # Mapping of pin numbers to pin objects
 PIN_OBJS = dict()
 # mapping from dictionary to gpio pins
-MAPPING = { 'A':[12, 16, 18], 'B':[11, 13, 15], 'C':[19, 21, 23]}
+MAPPING = { 
+            'A':[7, 11], 'B':[12, 13], 'C':[15, 16], 'D':[18, 22, 29],
+            'E':[31, 32], 'F':[33, 35], 'G':[36, 37], 'H':[38, 40] 
+          }
+
+# FRONT / BACK
+# A/E: Thumb tip, Index tip
+# B/F: Middle tip, Ring tip
+# C/G: Pinky tip, Top left palm
+# D/H: Top right palm, Bottom left palm, Bottom right palm
 
 def activate(data):
     freq_factor = 70
