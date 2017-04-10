@@ -9,7 +9,7 @@ import RPi.GPIO as GPIO
 # Size of buffer in bytes
 BUFFER_SIZE = 1024
 # Receiver's IP
-UDP_IP = "128.237.173.155"
+UDP_IP = "128.237.177.230"
 # Receiver port
 UDP_PORT = 5005
 # Current pins being used
@@ -69,10 +69,35 @@ def gpio_init():
     for pin_num in CURR_PINS:
         GPIO.setup(pin_num, GPIO.OUT)
         # Initialize the frequency to be 0 Hz
-        PIN_DICT[pin_num] = 70
+        PIN_DICT[pin_num] = 0
 
         p = GPIO.PWM(pin_num, 1)
         PIN_OBJS[pin_num] = p
+
+def vibrateHand(data):
+    temp_dict = { 'A': 12, 'B': 16, 'C': 18, 'D': 22 }	
+    off_vals = {'A': 43, 'C': 43, 'B': 20, 'D': 20}
+    # Minimum frequency difference
+    threshold = 100
+    max_freq_factor = 300
+
+    # Save frequency to output
+    for key in data:
+	pin_num = temp_dict[key]
+	sensor_val = data[key]
+	new_freq = max_freq_factor * (off_vals[key] - sensor_val) / off_vals[key]
+	# Sensor is being touched at this location
+	if new_freq > threshold:
+	    PIN_DICT[pin_num] = new_freq
+	else:
+	    PIN_DICT[pin_num] = 0
+
+    # Output all the frequency values
+    for pin_num in PIN_OBJS:
+        pin_obj = PIN_OBJS[pin_num]
+        pin_freq = PIN_DICT[pin_num]
+        pin_obj.ChangeFrequency(pin_freq + 1)
+        pin_obj.start(50)
 
 def receive():
     PREV_DICT = dict()
@@ -83,10 +108,11 @@ def receive():
     while (1):
         data, addr = sock.recvfrom(BUFFER_SIZE)
         dataDict = parse(data)
-        if dataDict != PREV_DICT:
-            print "Received " + str(data)
-            PREV_DICT = dataDict
-            activate(dataDict)
+	vibrateHand(dataDict)
+        # if dataDict != PREV_DICT:
+        #     print "Received " + str(data)
+        #     PREV_DICT = dataDict
+        #     activate(dataDict)
 
 receive()
 
