@@ -1,9 +1,20 @@
 import socket
 import RPi.GPIO as GPIO, time, os
-
-UDP_IP = "128.237.208.146" #receiver's IP
+GPIO.setmode(GPIO.BCM)
+UDP_IP = "128.237.177.230" #receiver's IP
 UDP_Port = 5005
 MSG = 'heloo'
+
+def RCtime(RCpin):
+    reading = 0
+    GPIO.setup(RCpin, GPIO.OUT)
+    GPIO.output(RCpin, GPIO.LOW)
+    time.sleep(0.05)
+
+    GPIO.setup(RCpin, GPIO.IN)
+    while(GPIO.input(RCpin) == GPIO.LOW):
+        reading +=1
+    return reading
 
 def sense():
 	#read from gpio headers and consolidate into dictionary
@@ -16,15 +27,7 @@ def sense():
                         ('F', [1,2,3,4,5]),
                         ('G', [1,2,3,4,5]),
                         ('H', [1,2,3,4,5])])
-	reading = 0
-	GPIO.setup(18, GPIO.OUT)
-	GPIO.output(18, GPIO.LOW)
-	time.sleep(0.1)
-	GPIO.setup(18, GPIO.IN)
-	while(GPIO.input(18) == GPIO>LOW):
-		reading += 1
-	return reading
-	#return test
+	return test
 
 def send():
 	#constantly sending to receiver pi
@@ -34,9 +37,13 @@ def send():
 	print "UDP target port:", UDP_Port
 	print 'message:',MSG
 	while (1):
-		data = sense()
-		print data
-		dataToSend = str(data)
+		#data = sense()
+                dic = dict()
+                dic['A'] = RCtime(24)
+                dic['B'] = RCtime(23)
+                dic['C'] = RCtime(25)
+                dic['D'] = RCtime(22)
+                dataToSend = str(dic)
 		sock.sendto(dataToSend, (UDP_IP, UDP_Port))
 
 def demoSend():
@@ -54,5 +61,6 @@ def demoSend():
 			data = "a"
 		sock.sendto(data, (UDP_IP, UDP_Port))
 
-demoSend()
+#demoSend()
+send()
 
