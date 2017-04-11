@@ -144,7 +144,7 @@
 <wire x1="75.87" y1="0" x2="75.87" y2="76.19" width="0" layer="20"/>
 <wire x1="75.87" y1="76.19" x2="0" y2="76.19" width="0" layer="20"/>
 <wire x1="0" y1="76.19" x2="0" y2="0" width="0" layer="20"/>
-<text x="12.7" y="71.12" size="1.778" layer="1" font="vector" ratio="14">team12</text>
+<text x="12.7" y="71.12" size="1.778" layer="1" font="vector" ratio="16">team12</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -497,12 +497,12 @@ design rules under a new name.</description>
 </designrules>
 <autorouter>
 <pass name="Default">
-<param name="RoutingGrid" value="50mil"/>
+<param name="RoutingGrid" value="12.5mil"/>
 <param name="AutoGrid" value="1"/>
 <param name="Efforts" value="0"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.1" value="-"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -517,7 +517,7 @@ design rules under a new name.</description>
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
 <param name="PrefDir.15" value="0"/>
-<param name="PrefDir.16" value="a"/>
+<param name="PrefDir.16" value="|"/>
 <param name="cfVia" value="8"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
