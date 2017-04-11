@@ -22,5 +22,7 @@ Repeat the same for sender pi (ssh pi@chelsea.local)
 ** need to update the ip address in sender.py and receiver.py file to be the receiver pi's ip address for them to talk to each other over wifi
 
 Reading Resistance with Raspberry Pi
+Capacitor: 0.047 uF
+Resistor: 2.2 kOhm
 Diagram: http://www.raspberrypi-spy.co.uk/2012/08/reading-analogue-sensors-with-one-gpio-pin/
 RPi does not have any analog inputs, and GPIO pins can only read HIGH and LOW levels. We instead use a basic RC charging circuit. Measure resistance by counting how long it takes for a capacitor to charge and register "HIGH" on a GPIO pin.
