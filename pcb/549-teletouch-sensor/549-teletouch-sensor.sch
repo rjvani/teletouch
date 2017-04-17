@@ -1950,8 +1950,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <part name="C6" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C9" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C10" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="C12" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="C13" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
@@ -1962,26 +1960,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <part name="C19" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="C20" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="C11" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C21" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C22" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C23" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C24" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C25" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C26" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C27" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C28" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="C29" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="C30" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C31" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C32" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C33" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C34" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C35" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C36" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C37" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C38" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C39" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
-<part name="C40" library="SparkFun-Capacitors" deviceset="47NF" device="-0603-25V-5%" value="47nF"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
@@ -1998,29 +1978,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <part name="R18" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="R19" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="R20" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R21" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R22" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R23" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R24" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R25" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R26" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R27" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R28" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R29" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R30" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R31" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R32" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R33" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R34" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R35" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R36" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R37" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R38" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R39" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
-<part name="R40" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="IC1" library="adafruit" deviceset="MCP23017" device="SP"/>
 <part name="IC2" library="adafruit" deviceset="MCP23017" device="SP"/>
-<part name="SENSOR_ENDS2" library="SparkFun-Connectors" deviceset="CONN_20X2" device=""/>
 <part name="SENSOR_ENDS1" library="SparkFun-Connectors" deviceset="CONN_20X2" device=""/>
 </parts>
 <sheets>
@@ -2035,16 +1994,14 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <instance part="R2" gate="G$1" x="20.32" y="165.1"/>
 <instance part="R3" gate="G$1" x="20.32" y="157.48"/>
 <instance part="R4" gate="G$1" x="20.32" y="149.86"/>
-<instance part="C1" gate="G$1" x="160.02" y="111.76" rot="R270"/>
-<instance part="C2" gate="G$1" x="160.02" y="119.38" rot="R270"/>
-<instance part="C3" gate="G$1" x="160.02" y="127" rot="R270"/>
-<instance part="C4" gate="G$1" x="160.02" y="134.62" rot="R270"/>
-<instance part="C5" gate="G$1" x="160.02" y="142.24" rot="R270"/>
-<instance part="C6" gate="G$1" x="160.02" y="149.86" rot="R270"/>
-<instance part="C7" gate="G$1" x="160.02" y="157.48" rot="R270"/>
-<instance part="C8" gate="G$1" x="160.02" y="165.1" rot="R270"/>
-<instance part="C9" gate="G$1" x="160.02" y="172.72" rot="R270"/>
-<instance part="C10" gate="G$1" x="160.02" y="180.34" rot="R270"/>
+<instance part="C1" gate="G$1" x="160.02" y="127" rot="R270"/>
+<instance part="C2" gate="G$1" x="160.02" y="134.62" rot="R270"/>
+<instance part="C3" gate="G$1" x="160.02" y="142.24" rot="R270"/>
+<instance part="C4" gate="G$1" x="160.02" y="149.86" rot="R270"/>
+<instance part="C5" gate="G$1" x="160.02" y="157.48" rot="R270"/>
+<instance part="C6" gate="G$1" x="160.02" y="165.1" rot="R270"/>
+<instance part="C7" gate="G$1" x="160.02" y="172.72" rot="R270"/>
+<instance part="C8" gate="G$1" x="160.02" y="180.34" rot="R270"/>
 <instance part="C12" gate="G$1" x="182.88" y="119.38" rot="R270"/>
 <instance part="C13" gate="G$1" x="182.88" y="127" rot="R270"/>
 <instance part="C14" gate="G$1" x="182.88" y="134.62" rot="R270"/>
@@ -2055,26 +2012,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <instance part="C19" gate="G$1" x="182.88" y="172.72" rot="R270"/>
 <instance part="C20" gate="G$1" x="182.88" y="180.34" rot="R270"/>
 <instance part="C11" gate="G$1" x="182.88" y="111.76" rot="R270"/>
-<instance part="C21" gate="G$1" x="208.28" y="111.76" rot="R270"/>
-<instance part="C22" gate="G$1" x="208.28" y="119.38" rot="R270"/>
-<instance part="C23" gate="G$1" x="208.28" y="127" rot="R270"/>
-<instance part="C24" gate="G$1" x="208.28" y="134.62" rot="R270"/>
-<instance part="C25" gate="G$1" x="208.28" y="142.24" rot="R270"/>
-<instance part="C26" gate="G$1" x="208.28" y="149.86" rot="R270"/>
-<instance part="C27" gate="G$1" x="208.28" y="157.48" rot="R270"/>
-<instance part="C28" gate="G$1" x="208.28" y="165.1" rot="R270"/>
-<instance part="C29" gate="G$1" x="208.28" y="172.72" rot="R270"/>
-<instance part="C30" gate="G$1" x="208.28" y="180.34" rot="R270"/>
-<instance part="C31" gate="G$1" x="233.68" y="111.76" rot="R270"/>
-<instance part="C32" gate="G$1" x="233.68" y="119.38" rot="R270"/>
-<instance part="C33" gate="G$1" x="233.68" y="127" rot="R270"/>
-<instance part="C34" gate="G$1" x="233.68" y="134.62" rot="R270"/>
-<instance part="C35" gate="G$1" x="233.68" y="142.24" rot="R270"/>
-<instance part="C36" gate="G$1" x="233.68" y="149.86" rot="R270"/>
-<instance part="C37" gate="G$1" x="233.68" y="157.48" rot="R270"/>
-<instance part="C38" gate="G$1" x="233.68" y="165.1" rot="R270"/>
-<instance part="C39" gate="G$1" x="233.68" y="172.72" rot="R270"/>
-<instance part="C40" gate="G$1" x="233.68" y="180.34" rot="R270"/>
+<instance part="C29" gate="G$1" x="160.02" y="111.76" rot="R270"/>
+<instance part="C30" gate="G$1" x="160.02" y="119.38" rot="R270"/>
 <instance part="R5" gate="G$1" x="20.32" y="142.24"/>
 <instance part="R6" gate="G$1" x="20.32" y="134.62"/>
 <instance part="R7" gate="G$1" x="20.32" y="127"/>
@@ -2091,29 +2030,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <instance part="R18" gate="G$1" x="48.26" y="119.38"/>
 <instance part="R19" gate="G$1" x="48.26" y="111.76"/>
 <instance part="R20" gate="G$1" x="48.26" y="180.34"/>
-<instance part="R21" gate="G$1" x="78.74" y="172.72"/>
-<instance part="R22" gate="G$1" x="78.74" y="165.1"/>
-<instance part="R23" gate="G$1" x="78.74" y="157.48"/>
-<instance part="R24" gate="G$1" x="78.74" y="149.86"/>
-<instance part="R25" gate="G$1" x="78.74" y="142.24"/>
-<instance part="R26" gate="G$1" x="78.74" y="134.62"/>
-<instance part="R27" gate="G$1" x="78.74" y="127"/>
-<instance part="R28" gate="G$1" x="78.74" y="119.38"/>
-<instance part="R29" gate="G$1" x="78.74" y="111.76"/>
-<instance part="R30" gate="G$1" x="78.74" y="180.34"/>
-<instance part="R31" gate="G$1" x="109.22" y="172.72"/>
-<instance part="R32" gate="G$1" x="109.22" y="165.1"/>
-<instance part="R33" gate="G$1" x="109.22" y="157.48"/>
-<instance part="R34" gate="G$1" x="109.22" y="149.86"/>
-<instance part="R35" gate="G$1" x="109.22" y="142.24"/>
-<instance part="R36" gate="G$1" x="109.22" y="134.62"/>
-<instance part="R37" gate="G$1" x="109.22" y="127"/>
-<instance part="R38" gate="G$1" x="109.22" y="119.38"/>
-<instance part="R39" gate="G$1" x="109.22" y="111.76"/>
-<instance part="R40" gate="G$1" x="109.22" y="180.34"/>
 <instance part="IC1" gate="G$1" x="83.82" y="78.74"/>
 <instance part="IC2" gate="G$1" x="124.46" y="33.02"/>
-<instance part="SENSOR_ENDS2" gate="G$1" x="213.36" y="71.12"/>
 <instance part="SENSOR_ENDS1" gate="G$1" x="172.72" y="71.12"/>
 </instances>
 <busses>
@@ -2126,54 +2044,44 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="7.62" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="180.34" x2="170.18" y2="180.34" width="0.1524" layer="91"/>
 <label x="165.1" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="172.72" x2="170.18" y2="172.72" width="0.1524" layer="91"/>
 <label x="165.1" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="165.1" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
 <label x="165.1" y="165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="157.48" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
 <label x="165.1" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
 <label x="165.1" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
 <label x="165.1" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="134.62" x2="170.18" y2="134.62" width="0.1524" layer="91"/>
 <label x="165.1" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="127" x2="170.18" y2="127" width="0.1524" layer="91"/>
 <label x="165.1" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="119.38" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
-<label x="165.1" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
-<label x="165.1" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C20" gate="G$1" pin="1"/>
@@ -2227,108 +2135,13 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 </segment>
 <segment>
 <pinref part="C30" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="180.34" x2="220.98" y2="180.34" width="0.1524" layer="91"/>
-<label x="213.36" y="180.34" size="1.778" layer="95"/>
+<wire x1="165.1" y1="119.38" x2="172.72" y2="119.38" width="0.1524" layer="91"/>
+<label x="165.1" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="172.72" x2="220.98" y2="172.72" width="0.1524" layer="91"/>
-<label x="213.36" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="165.1" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
-<label x="213.36" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C27" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
-<label x="213.36" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C26" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
-<label x="213.36" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="142.24" x2="220.98" y2="142.24" width="0.1524" layer="91"/>
-<label x="213.36" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
-<label x="213.36" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C23" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="127" x2="220.98" y2="127" width="0.1524" layer="91"/>
-<label x="213.36" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C22" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="119.38" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
-<label x="213.36" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
-<label x="213.36" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C40" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="180.34" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
-<label x="238.76" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C39" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="172.72" x2="246.38" y2="172.72" width="0.1524" layer="91"/>
-<label x="238.76" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C38" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="165.1" x2="246.38" y2="165.1" width="0.1524" layer="91"/>
-<label x="238.76" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C37" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="157.48" x2="246.38" y2="157.48" width="0.1524" layer="91"/>
-<label x="238.76" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C36" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="149.86" x2="246.38" y2="149.86" width="0.1524" layer="91"/>
-<label x="238.76" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C35" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="142.24" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
-<label x="238.76" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C34" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="134.62" x2="246.38" y2="134.62" width="0.1524" layer="91"/>
-<label x="238.76" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C33" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="127" x2="246.38" y2="127" width="0.1524" layer="91"/>
-<label x="238.76" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C32" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="119.38" x2="246.38" y2="119.38" width="0.1524" layer="91"/>
-<label x="238.76" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C31" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="111.76" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
-<label x="238.76" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="A0"/>
-<wire x1="71.12" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
-<label x="66.04" y="68.58" size="1.778" layer="95"/>
+<wire x1="165.1" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
+<label x="165.1" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A1"/>
@@ -2360,6 +2173,11 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <wire x1="111.76" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
 <label x="106.68" y="12.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="A0"/>
+<wire x1="111.76" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
+<label x="106.68" y="22.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VDD" class="0">
 <segment>
@@ -2388,16 +2206,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="106.68" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="A0"/>
-<wire x1="111.76" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
-<label x="106.68" y="22.86" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="A0"/>
+<wire x1="71.12" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
+<label x="66.04" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP1" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="165.1" x2="149.86" y2="165.1" width="0.1524" layer="91"/>
-<label x="149.86" y="165.1" size="1.778" layer="95"/>
+<wire x1="157.48" y1="180.34" x2="149.86" y2="180.34" width="0.1524" layer="91"/>
+<label x="149.86" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GPA0"/>
@@ -2405,16 +2223,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
-<label x="200.66" y="93.98" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
+<label x="182.88" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP2" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="157.48" x2="149.86" y2="157.48" width="0.1524" layer="91"/>
-<label x="149.86" y="157.48" size="1.778" layer="95"/>
+<wire x1="157.48" y1="172.72" x2="149.86" y2="172.72" width="0.1524" layer="91"/>
+<label x="149.86" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GPA1"/>
@@ -2422,16 +2240,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="3"/>
-<wire x1="205.74" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
-<label x="200.66" y="91.44" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="4"/>
+<wire x1="180.34" y1="91.44" x2="185.42" y2="91.44" width="0.1524" layer="91"/>
+<label x="182.88" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP3" class="0">
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="149.86" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
-<label x="149.86" y="149.86" size="1.778" layer="95"/>
+<wire x1="157.48" y1="165.1" x2="149.86" y2="165.1" width="0.1524" layer="91"/>
+<label x="149.86" y="165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GPA2"/>
@@ -2439,16 +2257,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="5"/>
-<wire x1="205.74" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
-<label x="200.66" y="88.9" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="6"/>
+<wire x1="180.34" y1="88.9" x2="187.96" y2="88.9" width="0.1524" layer="91"/>
+<label x="182.88" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP4" class="0">
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="142.24" x2="149.86" y2="142.24" width="0.1524" layer="91"/>
-<label x="149.86" y="142.24" size="1.778" layer="95"/>
+<wire x1="157.48" y1="157.48" x2="149.86" y2="157.48" width="0.1524" layer="91"/>
+<label x="149.86" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GPA3"/>
@@ -2456,16 +2274,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="7"/>
-<wire x1="205.74" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
-<label x="200.66" y="86.36" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="8"/>
+<wire x1="180.34" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
+<label x="180.34" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP5" class="0">
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="134.62" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
-<label x="149.86" y="134.62" size="1.778" layer="95"/>
+<wire x1="157.48" y1="149.86" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
+<label x="149.86" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GPA4"/>
@@ -2473,16 +2291,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="9"/>
-<wire x1="205.74" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
-<label x="200.66" y="83.82" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="10"/>
+<wire x1="180.34" y1="83.82" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
+<label x="180.34" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP6" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="127" x2="149.86" y2="127" width="0.1524" layer="91"/>
-<label x="149.86" y="127" size="1.778" layer="95"/>
+<wire x1="157.48" y1="142.24" x2="149.86" y2="142.24" width="0.1524" layer="91"/>
+<label x="149.86" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GPA5"/>
@@ -2490,16 +2308,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="11"/>
-<wire x1="205.74" y1="81.28" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
-<label x="200.66" y="81.28" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="12"/>
+<wire x1="180.34" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
+<label x="180.34" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP7" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
-<label x="149.86" y="119.38" size="1.778" layer="95"/>
+<wire x1="157.48" y1="134.62" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
+<label x="149.86" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GPA6"/>
@@ -2507,16 +2325,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="13"/>
-<wire x1="205.74" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
-<label x="200.66" y="78.74" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="14"/>
+<wire x1="180.34" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
+<label x="180.34" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP8" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
-<label x="149.86" y="111.76" size="1.778" layer="95"/>
+<wire x1="157.48" y1="127" x2="149.86" y2="127" width="0.1524" layer="91"/>
+<label x="149.86" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GPA7"/>
@@ -2524,9 +2342,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="15"/>
-<wire x1="205.74" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
-<label x="200.66" y="76.2" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="16"/>
+<wire x1="180.34" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
+<label x="180.34" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP9" class="0">
@@ -2541,9 +2359,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="17"/>
-<wire x1="205.74" y1="73.66" x2="200.66" y2="73.66" width="0.1524" layer="91"/>
-<label x="200.66" y="73.66" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="18"/>
+<wire x1="180.34" y1="73.66" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
+<label x="180.34" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP10" class="0">
@@ -2558,9 +2376,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="19"/>
-<wire x1="205.74" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
-<label x="200.66" y="71.12" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="20"/>
+<wire x1="180.34" y1="71.12" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
+<label x="180.34" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP11" class="0">
@@ -2575,9 +2393,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="21"/>
-<wire x1="205.74" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
-<label x="200.66" y="68.58" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="22"/>
+<wire x1="180.34" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
+<label x="180.34" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP12" class="0">
@@ -2592,9 +2410,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="23"/>
-<wire x1="205.74" y1="66.04" x2="200.66" y2="66.04" width="0.1524" layer="91"/>
-<label x="200.66" y="66.04" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="24"/>
+<wire x1="180.34" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
+<label x="180.34" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP13" class="0">
@@ -2609,9 +2427,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="25"/>
-<wire x1="205.74" y1="63.5" x2="200.66" y2="63.5" width="0.1524" layer="91"/>
-<label x="200.66" y="63.5" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="26"/>
+<wire x1="180.34" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
+<label x="180.34" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP14" class="0">
@@ -2626,9 +2444,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="27"/>
-<wire x1="205.74" y1="60.96" x2="200.66" y2="60.96" width="0.1524" layer="91"/>
-<label x="200.66" y="60.96" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="28"/>
+<wire x1="180.34" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
+<label x="180.34" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP15" class="0">
@@ -2643,9 +2461,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="29"/>
-<wire x1="205.74" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
-<label x="200.66" y="58.42" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="30"/>
+<wire x1="180.34" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
+<label x="180.34" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP16" class="0">
@@ -2660,9 +2478,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="139.7" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="31"/>
-<wire x1="205.74" y1="55.88" x2="200.66" y2="55.88" width="0.1524" layer="91"/>
-<label x="200.66" y="55.88" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="32"/>
+<wire x1="180.34" y1="55.88" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
+<label x="180.34" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP17" class="0">
@@ -2677,9 +2495,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="99.06" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="33"/>
-<wire x1="205.74" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
-<label x="200.66" y="53.34" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="34"/>
+<wire x1="180.34" y1="53.34" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
+<label x="180.34" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP18" class="0">
@@ -2694,16 +2512,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="99.06" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="35"/>
-<wire x1="205.74" y1="50.8" x2="200.66" y2="50.8" width="0.1524" layer="91"/>
-<label x="200.66" y="50.8" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="36"/>
+<wire x1="180.34" y1="50.8" x2="185.42" y2="50.8" width="0.1524" layer="91"/>
+<label x="180.34" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP19" class="0">
 <segment>
 <pinref part="C30" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="180.34" x2="198.12" y2="180.34" width="0.1524" layer="91"/>
-<label x="198.12" y="180.34" size="1.778" layer="95"/>
+<wire x1="157.48" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
+<label x="149.86" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPA2"/>
@@ -2711,16 +2529,16 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="99.06" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="37"/>
-<wire x1="205.74" y1="48.26" x2="200.66" y2="48.26" width="0.1524" layer="91"/>
-<label x="200.66" y="48.26" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="38"/>
+<wire x1="180.34" y1="48.26" x2="185.42" y2="48.26" width="0.1524" layer="91"/>
+<label x="180.34" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GP20" class="0">
 <segment>
 <pinref part="C29" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="172.72" x2="198.12" y2="172.72" width="0.1524" layer="91"/>
-<label x="198.12" y="172.72" size="1.778" layer="95"/>
+<wire x1="157.48" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
+<label x="149.86" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPA3"/>
@@ -2728,349 +2546,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="99.06" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="39"/>
-<wire x1="205.74" y1="45.72" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
-<label x="200.66" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP21" class="0">
-<segment>
-<pinref part="C28" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="165.1" x2="198.12" y2="165.1" width="0.1524" layer="91"/>
-<label x="198.12" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPA4"/>
-<wire x1="96.52" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<label x="99.06" y="88.9" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="2"/>
-<wire x1="220.98" y1="93.98" x2="226.06" y2="93.98" width="0.1524" layer="91"/>
-<label x="223.52" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP22" class="0">
-<segment>
-<pinref part="C27" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="157.48" x2="198.12" y2="157.48" width="0.1524" layer="91"/>
-<label x="198.12" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPA5"/>
-<wire x1="96.52" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
-<label x="99.06" y="86.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="4"/>
-<wire x1="220.98" y1="91.44" x2="226.06" y2="91.44" width="0.1524" layer="91"/>
-<label x="223.52" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP23" class="0">
-<segment>
-<pinref part="C26" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="149.86" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
-<label x="198.12" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPA6"/>
-<wire x1="96.52" y1="83.82" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
-<label x="99.06" y="83.82" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="6"/>
-<wire x1="220.98" y1="88.9" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
-<label x="223.52" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP24" class="0">
-<segment>
-<pinref part="C25" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="142.24" x2="198.12" y2="142.24" width="0.1524" layer="91"/>
-<label x="198.12" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPA7"/>
-<wire x1="96.52" y1="81.28" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
-<label x="99.06" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="8"/>
-<wire x1="220.98" y1="86.36" x2="226.06" y2="86.36" width="0.1524" layer="91"/>
-<label x="223.52" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP25" class="0">
-<segment>
-<pinref part="C24" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="134.62" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
-<label x="198.12" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPB0"/>
-<wire x1="96.52" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
-<label x="99.06" y="76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="10"/>
-<wire x1="220.98" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
-<label x="223.52" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP26" class="0">
-<segment>
-<pinref part="C23" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
-<label x="198.12" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPB1"/>
-<wire x1="96.52" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
-<label x="99.06" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="12"/>
-<wire x1="220.98" y1="81.28" x2="226.06" y2="81.28" width="0.1524" layer="91"/>
-<label x="223.52" y="81.28" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP27" class="0">
-<segment>
-<pinref part="C22" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="119.38" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
-<label x="198.12" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPB2"/>
-<wire x1="96.52" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
-<label x="96.52" y="71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="14"/>
-<wire x1="220.98" y1="78.74" x2="226.06" y2="78.74" width="0.1524" layer="91"/>
-<label x="223.52" y="78.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP28" class="0">
-<segment>
-<pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="111.76" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
-<label x="198.12" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPB3"/>
-<wire x1="96.52" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
-<label x="99.06" y="68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="16"/>
-<wire x1="220.98" y1="76.2" x2="226.06" y2="76.2" width="0.1524" layer="91"/>
-<label x="223.52" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP29" class="0">
-<segment>
-<pinref part="C40" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="180.34" x2="223.52" y2="180.34" width="0.1524" layer="91"/>
-<label x="223.52" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPB4"/>
-<wire x1="96.52" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
-<label x="99.06" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="18"/>
-<wire x1="220.98" y1="73.66" x2="226.06" y2="73.66" width="0.1524" layer="91"/>
-<label x="223.52" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP30" class="0">
-<segment>
-<pinref part="C39" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="172.72" x2="223.52" y2="172.72" width="0.1524" layer="91"/>
-<label x="223.52" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPB5"/>
-<wire x1="96.52" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
-<label x="99.06" y="63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="20"/>
-<wire x1="220.98" y1="71.12" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
-<label x="223.52" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP31" class="0">
-<segment>
-<pinref part="C38" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="165.1" x2="223.52" y2="165.1" width="0.1524" layer="91"/>
-<label x="223.52" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPB6"/>
-<wire x1="96.52" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
-<label x="99.06" y="60.96" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="22"/>
-<wire x1="220.98" y1="68.58" x2="226.06" y2="68.58" width="0.1524" layer="91"/>
-<label x="223.52" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP32" class="0">
-<segment>
-<pinref part="C37" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="157.48" x2="223.52" y2="157.48" width="0.1524" layer="91"/>
-<label x="223.52" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="GPB7"/>
-<wire x1="96.52" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
-<label x="99.06" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="24"/>
-<wire x1="220.98" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
-<label x="223.52" y="66.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP33" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GP5"/>
-<wire x1="15.24" y1="83.82" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
-<label x="7.62" y="83.82" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C36" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="149.86" x2="223.52" y2="149.86" width="0.1524" layer="91"/>
-<label x="223.52" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="26"/>
-<wire x1="220.98" y1="63.5" x2="226.06" y2="63.5" width="0.1524" layer="91"/>
-<label x="223.52" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP34" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GP6"/>
-<wire x1="15.24" y1="81.28" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
-<label x="7.62" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C35" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="142.24" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
-<label x="223.52" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="28"/>
-<wire x1="220.98" y1="60.96" x2="226.06" y2="60.96" width="0.1524" layer="91"/>
-<label x="223.52" y="60.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP35" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GP12"/>
-<wire x1="15.24" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
-<label x="7.62" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C34" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="134.62" x2="223.52" y2="134.62" width="0.1524" layer="91"/>
-<label x="223.52" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="30"/>
-<wire x1="220.98" y1="58.42" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
-<label x="223.52" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP36" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GP13"/>
-<wire x1="15.24" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
-<label x="7.62" y="76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C33" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
-<label x="223.52" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="32"/>
-<wire x1="220.98" y1="55.88" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
-<label x="223.52" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP37" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GP16"/>
-<wire x1="15.24" y1="73.66" x2="7.62" y2="73.66" width="0.1524" layer="91"/>
-<label x="7.62" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C32" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="119.38" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
-<label x="223.52" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="34"/>
-<wire x1="220.98" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
-<label x="223.52" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP38" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GP19"/>
-<wire x1="15.24" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
-<label x="7.62" y="71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C31" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="111.76" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
-<label x="223.52" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="36"/>
-<wire x1="220.98" y1="50.8" x2="226.06" y2="50.8" width="0.1524" layer="91"/>
-<label x="223.52" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP39" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GP20"/>
-<wire x1="15.24" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
-<label x="7.62" y="68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="180.34" x2="149.86" y2="180.34" width="0.1524" layer="91"/>
-<label x="149.86" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="38"/>
-<wire x1="220.98" y1="48.26" x2="226.06" y2="48.26" width="0.1524" layer="91"/>
-<label x="223.52" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GP40" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GP21"/>
-<wire x1="15.24" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
-<label x="7.62" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="172.72" x2="149.86" y2="172.72" width="0.1524" layer="91"/>
-<label x="149.86" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS2" gate="G$1" pin="40"/>
-<wire x1="220.98" y1="45.72" x2="226.06" y2="45.72" width="0.1524" layer="91"/>
-<label x="223.52" y="45.72" size="1.778" layer="95"/>
+<pinref part="SENSOR_ENDS1" gate="G$1" pin="40"/>
+<wire x1="180.34" y1="45.72" x2="185.42" y2="45.72" width="0.1524" layer="91"/>
+<label x="180.34" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -3347,246 +2825,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <label x="160.02" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="S21" class="0">
-<segment>
-<pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="180.34" x2="91.44" y2="180.34" width="0.1524" layer="91"/>
-<label x="83.82" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
-<label x="182.88" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S22" class="0">
-<segment>
-<pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="172.72" x2="91.44" y2="172.72" width="0.1524" layer="91"/>
-<label x="83.82" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="4"/>
-<wire x1="180.34" y1="91.44" x2="185.42" y2="91.44" width="0.1524" layer="91"/>
-<label x="182.88" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S23" class="0">
-<segment>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="165.1" x2="91.44" y2="165.1" width="0.1524" layer="91"/>
-<label x="83.82" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="6"/>
-<wire x1="180.34" y1="88.9" x2="187.96" y2="88.9" width="0.1524" layer="91"/>
-<label x="182.88" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S24" class="0">
-<segment>
-<pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="157.48" x2="91.44" y2="157.48" width="0.1524" layer="91"/>
-<label x="83.82" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="8"/>
-<wire x1="180.34" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
-<label x="180.34" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S25" class="0">
-<segment>
-<pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="149.86" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
-<label x="83.82" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="10"/>
-<wire x1="180.34" y1="83.82" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
-<label x="180.34" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S26" class="0">
-<segment>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="142.24" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
-<label x="83.82" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="12"/>
-<wire x1="180.34" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
-<label x="180.34" y="81.28" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S27" class="0">
-<segment>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
-<label x="83.82" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="14"/>
-<wire x1="180.34" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
-<label x="180.34" y="78.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S28" class="0">
-<segment>
-<pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="127" x2="91.44" y2="127" width="0.1524" layer="91"/>
-<label x="83.82" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="16"/>
-<wire x1="180.34" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
-<label x="180.34" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S29" class="0">
-<segment>
-<pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="119.38" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
-<label x="83.82" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="18"/>
-<wire x1="180.34" y1="73.66" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
-<label x="180.34" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S30" class="0">
-<segment>
-<pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
-<label x="83.82" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="20"/>
-<wire x1="180.34" y1="71.12" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
-<label x="180.34" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S31" class="0">
-<segment>
-<pinref part="R40" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="180.34" x2="124.46" y2="180.34" width="0.1524" layer="91"/>
-<label x="114.3" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="22"/>
-<wire x1="180.34" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
-<label x="180.34" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S32" class="0">
-<segment>
-<pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="172.72" x2="124.46" y2="172.72" width="0.1524" layer="91"/>
-<label x="114.3" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="24"/>
-<wire x1="180.34" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
-<label x="180.34" y="66.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S33" class="0">
-<segment>
-<pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="165.1" x2="124.46" y2="165.1" width="0.1524" layer="91"/>
-<label x="114.3" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="26"/>
-<wire x1="180.34" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
-<label x="180.34" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S34" class="0">
-<segment>
-<pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
-<label x="114.3" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="28"/>
-<wire x1="180.34" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
-<label x="180.34" y="60.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S35" class="0">
-<segment>
-<pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="149.86" x2="124.46" y2="149.86" width="0.1524" layer="91"/>
-<label x="114.3" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="30"/>
-<wire x1="180.34" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91"/>
-<label x="180.34" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S36" class="0">
-<segment>
-<pinref part="R35" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="142.24" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
-<label x="114.3" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="32"/>
-<wire x1="180.34" y1="55.88" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
-<label x="180.34" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S37" class="0">
-<segment>
-<pinref part="R36" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="134.62" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
-<label x="114.3" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="34"/>
-<wire x1="180.34" y1="53.34" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
-<label x="180.34" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S38" class="0">
-<segment>
-<pinref part="R37" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="127" x2="124.46" y2="127" width="0.1524" layer="91"/>
-<label x="114.3" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="36"/>
-<wire x1="180.34" y1="50.8" x2="185.42" y2="50.8" width="0.1524" layer="91"/>
-<label x="180.34" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S39" class="0">
-<segment>
-<pinref part="R38" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
-<label x="114.3" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="38"/>
-<wire x1="180.34" y1="48.26" x2="185.42" y2="48.26" width="0.1524" layer="91"/>
-<label x="180.34" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="S40" class="0">
-<segment>
-<pinref part="R39" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="111.76" x2="124.46" y2="111.76" width="0.1524" layer="91"/>
-<label x="114.3" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SENSOR_ENDS1" gate="G$1" pin="40"/>
-<wire x1="180.34" y1="45.72" x2="185.42" y2="45.72" width="0.1524" layer="91"/>
-<label x="180.34" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3.3V@1"/>
@@ -3692,106 +2930,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21952a.pdf</description>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
 <label x="35.56" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="180.34" x2="66.04" y2="180.34" width="0.1524" layer="91"/>
-<label x="66.04" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="172.72" x2="66.04" y2="172.72" width="0.1524" layer="91"/>
-<label x="66.04" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="165.1" x2="66.04" y2="165.1" width="0.1524" layer="91"/>
-<label x="66.04" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="157.48" x2="66.04" y2="157.48" width="0.1524" layer="91"/>
-<label x="66.04" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="149.86" x2="66.04" y2="149.86" width="0.1524" layer="91"/>
-<label x="66.04" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="142.24" x2="66.04" y2="142.24" width="0.1524" layer="91"/>
-<label x="66.04" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="134.62" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
-<label x="66.04" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
-<label x="66.04" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
-<label x="66.04" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
-<label x="66.04" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R40" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="180.34" x2="96.52" y2="180.34" width="0.1524" layer="91"/>
-<label x="96.52" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="172.72" x2="96.52" y2="172.72" width="0.1524" layer="91"/>
-<label x="96.52" y="172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="165.1" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
-<label x="96.52" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="157.48" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
-<label x="96.52" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="149.86" x2="96.52" y2="149.86" width="0.1524" layer="91"/>
-<label x="96.52" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R35" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="142.24" x2="96.52" y2="142.24" width="0.1524" layer="91"/>
-<label x="96.52" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R36" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="134.62" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
-<label x="96.52" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R37" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
-<label x="96.52" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R38" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
-<label x="96.52" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R39" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
-<label x="96.52" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
