@@ -108,6 +108,18 @@ def socket_init():
         import commands
         UDP_IP = commands.getoutput("hostname -I")
 
+def convert(s):
+    firstStrip = s.strip('\0')
+    # I'm not sure why this works.
+    secondStrip = firstStrip.strip('\4')
+    thirdStrip = firstStrip.strip('\5')
+    fourthStrip = firstStrip.strip('\6')
+
+    if len(firstStrip) != len(secondStrip):
+        return secondStrip
+    else:
+        return thirdStrip
+
 def receive():
     socket_init()
     gpio_init()
@@ -121,8 +133,25 @@ def receive():
         sock.listen(2)
         s, addr = sock.accept()
         data, _ = s.recvfrom(BUFFER_SIZE)
+        
         if len(data) != 0:
             print data
+            continue
+            # TODO: Helper function
+            evalData = data.split(",")
+            pin_num = None
+            factor = None
+            try:
+                pin_num = convert(evalData[0])
+                pin_num = int(pin_num)
+                factor = int(evalData[1])
+                # print pin_num, factor
+                pin_obj = PIN_OBJS[pin_num]
+                pin_freq = PIN_DICT[pin_num]
+                pin_obj.ChangeFrequency(3.0 * factor + 1)
+                pin_obj.start(50 if factor != 0 else 0)
+            except Exception as e:
+                print "rip", e, pin_num, factor
 
 receive()
 
