@@ -11,14 +11,14 @@ mcp1 = Adafruit_MCP230XX(address = 0x20, num_gpios = 16) # MCP23017
 mcp2 = Adafruit_MCP230XX(address = 0x21, num_gpios = 16) # MCP23017
 DEFAULT_VALUES = dict() # default values of sensors when untouched
 THRESHOLD_VALUES = dict() # threshold difference to activate actuator
-
+LOWEST_VALUES = dict()
 """
 Read from individual expander pin
 """
 def RCtime(mcp, RCpin):
     reading = 0
     mcp.config(RCpin, mcp.OUTPUT)
-    GPIO.output(RCpin, 0)
+    #GPIO.output(RCpin, 0)
     time.sleep(0.05)
 
     mcp.config(RCpin, mcp.INPUT)
@@ -35,8 +35,13 @@ def calibrate():
     # mcp2: pins 0 thru 3
     mcp = mcp1
     currSensor = ord('A')
+    print "Calibrate"
     for x in range(0, 20):
-        loopCount = 100
+        print "Calibrating sensor ", x+1, "..."
+        if (x==0 or x==6 or x==8):
+            currSensor += 1
+            continue
+        loopCount = 20
         tot = 0
         count = 0
         pinNum = x
@@ -46,17 +51,30 @@ def calibrate():
             pinNum = x % 16
         while (count < loopCount):
             tot += RCtime(mcp, pinNum)
-            count ++
+            count += 1
         avg = tot/loopCount
+        print avg
         DEFAULT_VALUES[chr(currSensor)] = avg
-        THRESHOLD_VALUES[chr(currSensor)] = 8 # TODO: fine tune this
-        currSensor ++
+        THRESHOLD_VALUES[chr(currSensor)] = 8 # TODO: manual tune
+        LOWEST_VALUES[chr(currSensor)] = 50 #TODO: manual tune
+        currSensor += 1
+    print "Done."
+
+
+def printDefVals():
+    currSensor = ord('A')
+    for x in range(0, 20):
+        if (x==0 or x==6 or x==8):
+            continue
+        print str(x), chr(currSensor+x), ": ", DEFAULT_VALUES[chr(currSensor+x)]
+
+
 
 """
-Read from expanders and consolidate into dictionary
+Read from expanders, compute, and consolidate into dictionary
 """
 def sense():
-	data = dict()
+    data = dict()
     mcp = mcp1
     currSensor = ord('A')
     for x in range(0,20):
@@ -65,27 +83,32 @@ def sense():
             mcp = mcp2
             pinNum = x % 16
         reading = RCtime(pinNum)
-        diff = DEFAULT_VALUES[chr(currSensor)] - reading
+        threshold = THRESHOLD_VALUES[chr(currSensor)]
+        lowest = LOWEST_VALUES[chr(currSensor)]
+        default = DEFAULT_VALUES[chr(currSensor)]
         data[chr(currSensor)] =  0
-        if (diff >= THRESHOLD_VALUES[chr(currSensor)]):
+        if (reading < lowest):
+            data[chr(currSensor)] =  100
+        elif (reading < default - threshold):
             # touched, scale to 100
-            lowest = 8 #TODO: fine tune this, different lowest for different sensors?
-            range = DEFAULT_VALUES[chr(currSensor)] - THRESHOLD_VALUES[chr(currSensor)] - lowest
+            range = default - threshold - lowest
             scaleFactor = 100/range
-            data[chr(currSensor)] =  scaleFactor * (reading-lowest)
-        currSensor ++
+            data[chr(currSensor)] =  scaleFactor * (default - threshold - reading) + 1
+        currSensor += 1
     return data
 
 """
 calibrate and initiate connection, send data over
 """
 def main():
-	calibrate()
-	sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-	while (1):
-		data = sense()
-		dataToSend = str(data)
-		sock.sendto(dataToSend, (UDP_IP, UDP_Port))
+    calibrate()
+    printDefVals()
+	#sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+	#while (1):
+	#	data = sense()
+	#	dataToSend = str(data)
+	#	sock.sendto(dataToSend, (UDP_IP, UDP_Port))
 
+GPIO.setmode(GPIO.BOARD)
 main()
 
