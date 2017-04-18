@@ -9,7 +9,7 @@ import RPi.GPIO as GPIO
 # Size of buffer in bytes
 BUFFER_SIZE = 1024
 # Receiver's IP
-UDP_IP = "128.237.177.230"
+UDP_IP = None
 # Receiver port
 UDP_PORT = 5005
 # Current pins being used
@@ -99,20 +99,30 @@ def vibrateHand(data):
         pin_obj.ChangeFrequency(pin_freq + 1)
         pin_obj.start(50)
 
+def socket_init():
+    global UDP_IP
+    UDP_IP = socket.gethostbyname(socket.getfqdn())
+    default = "127.0.1.1"
+
+    if UDP_IP == default:
+        import commands
+        UDP_IP = commands.getoutput("hostname -I")
+
 def receive():
-    PREV_DICT = dict()
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    sock.bind((UDP_IP, UDP_PORT))
+    socket_init()
     gpio_init()
+    PREV_DICT = dict()
+
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.bind((UDP_IP, UDP_PORT))
+
     # Constantly receive input and modify actuators
     while (1):
-        data, addr = sock.recvfrom(BUFFER_SIZE)
-        dataDict = parse(data)
-	vibrateHand(dataDict)
-        # if dataDict != PREV_DICT:
-        #     print "Received " + str(data)
-        #     PREV_DICT = dataDict
-        #     activate(dataDict)
+        sock.listen(2)
+        s, addr = sock.accept()
+        data, _ = s.recvfrom(BUFFER_SIZE)
+        if len(data) != 0:
+            print data
 
 receive()
 
