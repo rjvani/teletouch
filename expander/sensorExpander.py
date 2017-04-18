@@ -20,7 +20,17 @@ def RCtime(RCpin):
 	return reading
 
 while True:
-	try:
-		print "Sensor: ", RCtime(0)
-	except KeyboardInterrupt:
-		sys.exit()
+    try:
+    	reading = RCtime(2)
+    	print "Sensor: ", reading
+        defaultValue = 164
+        threshold = 10
+        lowest = 80
+        if (reading < lowest):
+        	print "100"
+        elif (reading < defaultValue - threshold):
+        	range = defaultValue - threshold - lowest
+        	scaleFactor = 100/range
+        	print str(scaleFactor * (defaultValue - threshold - reading) + 1)
+    except KeyboardInterrupt:
+        sys.exit()
