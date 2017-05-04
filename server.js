@@ -6,7 +6,7 @@ var ObjectID = mongodb.ObjectID;
 var RECORD = "recordings";
 var IP_ADDR = "ip";
 
-var app = require('express');
+var app = express();
 
 app.use(bodyParser.json({limit: '4096mb'}));
 app.use(bodyParser.urlencoded({
