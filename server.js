@@ -29,7 +29,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   console.log("Database connection ready");
 
   // Initialize the app.
-  var server = app.listen(8540, function () {
+  var server = app.listen(process.env.PORT, function () {
     var port = server.address().port;
     console.log("App now running on port", port);
   });
