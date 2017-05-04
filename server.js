@@ -55,15 +55,10 @@ function handleError(res, reason, message, code) {
   res.status(code || 500).send(message);
 }
 
-/*  "/api/contacts"
- *    GET: finds all contacts
- *    POST: creates a new contact
- */
-
 app.get("/api/recordings", function(req, res) {
   db.collection(RECORD).find({}).toArray(function(err, docs) {
     if (err) {
-      handleError(res, err.message, "Failed to get contacts.");
+      handleError(res, err.message, "Failed to get recordings.");
       return;
     } else {
       res.status(200).json(docs);
@@ -88,7 +83,7 @@ app.post("/api/recordings", function(req, res) {
 app.get("/api/address", function(req, res) {
   db.collection(IP_ADDR).find({}).toArray(function(err, docs) {
     if (err) {
-      handleError(res, err.message, "Failed to get contacts.");
+      handleError(res, err.message, "Failed to get adress.");
       return;
     } else {
       res.status(200).json(docs);
@@ -108,7 +103,7 @@ app.post("/api/address", function(req, res) {
       handleError(res, err.message, "Failed to create new recording.");
       return;
     } else {
-      res.status(201).json(doc.ops[0]);
+      res.status(200).json(docs);
     }
   });
 });
