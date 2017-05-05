@@ -2,14 +2,19 @@
 # Authors: Rohan Jadvani, Chelsea Kwong, Cristian Vallejo, Lisa Yan
 # Brief: Implementation of glove receiver code.
 
+from pymongo import MongoClient
+import datetime
 import socket
+import os
 import ast
 import RPi.GPIO as GPIO
 
+# MONGODB_URI
+MONGODB_URI = 'mongodb://heroku_w9j2glws:92r5t59p5go4givqetb7vhi34p@ds131151.mlab.com:31151/heroku_w9j2glws'
+# TABLE
+COLLECTION = "ip"
 # Size of buffer in bytes
 BUFFER_SIZE = 1024
-# Receiver's IP
-UDP_IP = "128.237.177.230"
 # Receiver port
 UDP_PORT = 5005
 # Current pins being used
@@ -19,15 +24,11 @@ PIN_DICT = dict()
 # Mapping of pin numbers to pin objects
 PIN_OBJS = dict()
 # mapping from dictionary to gpio pins
-MAPPING = { 
-        'A':[7, 11, 0, 0, 0], 
-        'B':[0, 13, 0, 12, 0], 
-        'C':[15, 16, 0, 18, 0], 
-        'D':[0, 22, 29, 0, 0],
-        'E':[31, 32, 0, 0, 0], 
-        'F':[33, 35, 0, 0, 0], 
-        'G':[36, 37, 0, 0, 0], 
-        'H':[38, 40, 0, 0, 0] 
+MAPPING = {
+        'A':[20, 22, 16, 13, 19],
+        'B':[6, 12, 5, 18, 17],
+        'C':[0, 25, 4, 23, 24],
+        'D':[21, 0, 0, 0, 0]
     }
 
 # FRONT / BACK
@@ -35,6 +36,13 @@ MAPPING = {
 # B/F: Middle tip, Ring tip
 # C/G: Pinky tip, Top left palm
 # D/H: Top right palm, Bottom left palm, Bottom right palm
+
+def getIP():
+    gw = os.popen("ip -4 route show default").read().split()
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect((gw[2], 0))
+    ipaddr = s.getsockname()[0]
+    return ipaddr
 
 def activate(data):
     lo = 100
@@ -75,7 +83,7 @@ def gpio_init():
         PIN_OBJS[pin_num] = p
 
 def vibrateHand(data):
-    temp_dict = { 'A': 12, 'B': 16, 'C': 18, 'D': 22 }	
+    temp_dict = { 'A': 12, 'B': 16, 'C': 18, 'D': 22 }
     off_vals = {'A': 43, 'C': 43, 'B': 20, 'D': 20}
     # Minimum frequency difference
     threshold = 100
@@ -100,11 +108,33 @@ def vibrateHand(data):
         pin_obj.start(50)
 
 def receive():
+    client = MongoClient(MONGODB_URI)
+    db = client.get_default_database()
+    ip_collection = db[COLLECTION]
+
+    print 'Cleaning UDP_IP from collection...'
+    ip_collection.remove()
+
+    ip = getIP()
+
+    ip_post = {
+                "ip": ip,
+                "createDate": datetime.datetime.utcnow()
+              }
+
+    result = ip_collection.insert(ip_post)
+
+    if (result != None):
+        print 'POST UDP_IP: '+ip+' succeeded. Sender will GET proper UDP_IP.'
+    else:
+        print 'POST request failed. Sender will not GET proper UDP_IP'
+
     PREV_DICT = dict()
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    sock.bind((UDP_IP, UDP_PORT))
+    sock.bind((getIP(), UDP_PORT))
     gpio_init()
     # Constantly receive input and modify actuators
+
     while (1):
         data, addr = sock.recvfrom(BUFFER_SIZE)
         dataDict = parse(data)
@@ -114,5 +144,5 @@ def receive():
         #     PREV_DICT = dataDict
         #     activate(dataDict)
 
-receive()
-
+if __name__ == "__main__":
+    receive()
