@@ -145,6 +145,36 @@ def get_freq(val, mode):
         return 4096
     return min_freq + val
 
+def vibrate_hand_sensor(data):
+    for test_id in data:
+        try:
+            android_id = str(int(test_id))
+            intensity = get_freq(data[android_id], "GPIO")
+            # See if the servo pins need to be triggered
+            if android_id in ["16", "18", "19", "20"]:
+                intensity = get_freq(data[android_id], "CHANNEL")
+                SERVO_CTRL.set_pwm_freq(intensity)
+                SERVO_CTRL.set_pwm(ANDROID_MAP[android_id], ON, OFF)
+                # ayy lmao
+                time.sleep(0.2)
+            else:
+                pin_obj = PIN_OBJS[ANDROID_MAP[android_id]]
+                pin_obj.ChangeFrequency(intensity + 1)
+                pin_obj.start(50)
+            # Set the other pins to be off
+            for test_id in range(1, 21):
+                other_id = str(test_id)
+                if other_id not in data:
+                    if other_id in ["16", "18", "19", "20"]:
+                        SERVO_CTRL.set_pwm_freq(1)
+                        SERVO_CTRL.set_pwm(ANDROID_MAP[other_id], ON, OFF)
+                    else:
+                        pin_obj = PIN_OBJS[ANDROID_MAP[other_id]]
+                        pin_obj.ChangeFrequency(1)
+                        pin_obj.start(0)
+        except:
+            pass
+
 def vibrate_hand(data):
     for android_id in data:
         intensity = get_freq(data[android_id], "GPIO")
@@ -252,19 +282,29 @@ def receive():
 
     print PREFIX, 'Receiving on UDP_PORT '+str(UDP_PORT)+'...'
 
+    sock.listen(2)
+    s, addr = sock.accept()
+
+    android_mode = False
     # Constantly receive input and modify actuators
     while (1):
-        sock.listen(2)
-        s, addr = sock.accept()
+        if android_mode:
+            sock.listen(2)
+            s, addr = sock.accept()
         data, _ = s.recvfrom(BUFFER_SIZE)
         if len(data) > 0:
             # Cancer
             data = data[data.find("{"):]
             dataDict = parse(data)
+            print dataDict
             # See if a recording was sent
             if dataDict.get("recordingId", None) != None:
                 load_recording(dataDict["recordingId"])
                 turn_everything_off()
+            elif dataDict.get("sensor", None) != None:
+                print "Sensor: ", dataDict
+                android_mode = False
+                vibrate_hand_sensor(dataDict)
             else:
                 vibrate_hand(dataDict)
 
