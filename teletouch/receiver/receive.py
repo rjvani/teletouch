@@ -222,14 +222,6 @@ def turn_everything_off():
             pin_obj.start(0)
 
 def receive():
-    print PREFIX, 'Waking up the API... ',
-    r = requests.get('http://teletouch.herokuapp.com/api/wake')
-
-    if ( r.status_code == requests.codes.ok ):
-        print 'Done.'
-    else:
-        return
-
     client = MongoClient(MONGODB_URI)
     db = client.get_default_database()
     ip_collection = db[COLLECTION]
