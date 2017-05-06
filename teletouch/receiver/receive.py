@@ -3,6 +3,8 @@
 # Brief: Implementation of glove receiver code.
 
 from pymongo import MongoClient
+import Adafruit_PCA9685
+import requests
 import datetime
 import socket
 import os
@@ -30,6 +32,12 @@ MAPPING = {
         'C':[13, 22, 7, 16, 18],
         'D':[15, 40, 3, 12, 0] # CHANNEL 15, 3, 12, 0
     }
+# Servo SERVO_CTRL.object
+SERVO_CTRL = Adafruit_PCA9685.PCA9685()
+
+# SERVO_CTRL.DRIVER DEF
+ON = 0
+OFF = 4095
 
 # FRONT / BACK
 # A/E: Thumb tip, Index tip
@@ -101,10 +109,12 @@ def pin_init(pin):
     print 'Done.'
 
 # Assuming sensors give val [0,100]
-def get_freq(val):
+def get_freq(val, mode):
     min_freq = 150
-    if ( val == 0):
+    if ( val == 0 and mode == "GPIO"):
         return 0
+    elif ( val == 0 and mode == "CHANNEL"):
+        return 4096
     return min_freq + val
 
 def vibrate_hand(data):
@@ -113,16 +123,37 @@ def vibrate_hand(data):
         for i in xrange(len(data[key])):
             pin_num = MAPPING[key][i]
             sensor_val = data[key][i]
-            PIN_DICT[pin_num] = get_freq(sensor_val)
+            if (key == 'D' and i != 1):
+                PIN_DICT['CH'+str(pin_num)] = get_freq(sensor_val, 'CHANNEL')
+            else:
+                PIN_DICT[pin_num] = get_freq(sensor_val, 'GPIO')
 
+    """
     # Output all the frequency values
     for pin_num in PIN_OBJS:
         pin_obj = PIN_OBJS[pin_num]
         pin_freq = PIN_DICT[pin_num]
         pin_obj.ChangeFrequency(pin_freq + 1)
         pin_obj.start(50)
+    """
+
+    for j in xrange(len(MAPPING['D'])):
+        if (j == 1): #skip the GPIO pin
+            continue
+        channel = MAPPING['D'][j]
+        channel_freq = PIN_DICT['CH'+str(channel)]
+        SERVO_CTRL.set_pwm_freq(channel_freq)
+        SERVO_CTRL.set_pwm(channel, ON, OFF)
 
 def receive():
+    print PREFIX, 'Waking up the API... ',
+    r = requests.get('http://teletouch.herokuapp.com/api/wake')
+
+    if ( r.status_code == requests.codes.ok ):
+        print 'Done.'
+    else:
+        return
+
     client = MongoClient(MONGODB_URI)
     db = client.get_default_database()
     ip_collection = db[COLLECTION]
