@@ -279,13 +279,12 @@ def receive():
     sock.bind((getIP(), UDP_PORT))
     gpio_init()
 
-
     print PREFIX, 'Receiving on UDP_PORT '+str(UDP_PORT)+'...'
 
     sock.listen(2)
     s, addr = sock.accept()
 
-    android_mode = False
+    android_mode = True
     # Constantly receive input and modify actuators
     while (1):
         if android_mode:
@@ -296,13 +295,11 @@ def receive():
             # Cancer
             data = data[data.find("{"):]
             dataDict = parse(data)
-            print dataDict
             # See if a recording was sent
             if dataDict.get("recordingId", None) != None:
                 load_recording(dataDict["recordingId"])
                 turn_everything_off()
             elif dataDict.get("sensor", None) != None:
-                print "Sensor: ", dataDict
                 android_mode = False
                 vibrate_hand_sensor(dataDict)
             else:
