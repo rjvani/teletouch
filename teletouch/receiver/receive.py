@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # File: receive.py
 # Authors: Rohan Jadvani, Chelsea Kwong, Cristian Vallejo, Lisa Yan
 # Brief: Implementation of glove receiver code.
@@ -240,7 +241,7 @@ def receive():
 
     ip_post = {
                 "ip": ip,
-                "createDate": datetime.datetime.utcnow()
+                "createDate": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
               }
 
     result = ip_collection.insert(ip_post)
