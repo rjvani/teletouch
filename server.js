@@ -55,6 +55,10 @@ function handleError(res, reason, message, code) {
   res.status(code || 500).send(message);
 }
 
+app.get("/api/wake", function(req, res) {
+    res.status(200).json({wake: true});
+});
+
 app.get("/api/recordings", function(req, res) {
   db.collection(RECORD).find({}).toArray(function(err, docs) {
     if (err) {
